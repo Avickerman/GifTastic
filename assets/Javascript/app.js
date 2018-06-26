@@ -3,9 +3,11 @@ var topics = [
     "Boat",
     "Snowboard",
     "Snowmobile",
-    "Fish",
-    "Hunt",
+    "Fishing",
+    "Hunting",
     "Golf",
+    "wakeboarding",
+    "wakesurfing",
     "Technology"
 ];
 
@@ -39,7 +41,7 @@ $("#addtopic").on("click", function () {
 
 function displayGifs() {
     var topic = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=cdmnjK7vgptU3oHxliF40Dt9gnlaBxC&rating=pg&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=kxUAgdv3lE5c8ZEeic3Dt0udHl336Koq&rating=pg&limit=10";
 
     $.ajax({
         url: queryURL,
